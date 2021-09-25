@@ -19,7 +19,7 @@ public class SettingsController : MonoBehaviour
 
     void Start()
     {
-        SetResolution();
+        StartResolution();
     }
 
     public void SetVolume(float volume)
@@ -37,7 +37,14 @@ public class SettingsController : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
-    void SetResolution()
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
+    void StartResolution()
     {
         resolutions = Screen.resolutions;
 
