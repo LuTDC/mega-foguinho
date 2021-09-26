@@ -362,18 +362,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2113686916 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4472582058142647237, guid: ab1fb22a116845a4e87cf3d3e2e7ceed,
-    type: 3}
-  m_PrefabInstance: {fileID: 4472582056888274497}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4adf1670f87d2d945b47da6692a5200f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4363925476096921772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,6 +369,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 895090847, guid: 40cc2f1aeb062414ea6af53d95015715, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054270553, guid: 40cc2f1aeb062414ea6af53d95015715, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4363925474624786772, guid: 40cc2f1aeb062414ea6af53d95015715,
         type: 3}
       propertyPath: m_Pivot.x
@@ -486,15 +482,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4363925474624786773, guid: 40cc2f1aeb062414ea6af53d95015715,
-        type: 3}
-      propertyPath: audio
-      value: 
-      objectReference: {fileID: 2113686916}
     - target: {fileID: 4363925474624786776, guid: 40cc2f1aeb062414ea6af53d95015715,
         type: 3}
       propertyPath: m_Name
-      value: PauseMenu
+      value: InGameMenus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40cc2f1aeb062414ea6af53d95015715, type: 3}

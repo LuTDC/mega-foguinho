@@ -459,11 +459,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sound/Music
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sound/Music
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ltdc0\mega-foguinho\MegaFoguinho
   m_LockTracker:
