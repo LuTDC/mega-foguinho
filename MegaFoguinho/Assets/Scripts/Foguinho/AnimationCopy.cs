@@ -20,10 +20,10 @@ public class AnimationCopy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.rotation = copyRotation();
+        copyRotation();
     }
 
-    private Quaternion copyRotation(){
-        return Quaternion.Inverse(targetLimb.localRotation) * targetInitialRotation;
+    private void copyRotation(){
+        ConfigurableJointExtensions.SetTargetRotationLocal(configurableJoint, targetLimb.localRotation, targetInitialRotation);
     }
 }

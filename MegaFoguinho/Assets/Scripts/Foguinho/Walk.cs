@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Walk : MonoBehaviour
 {
-    private Rigidbody rigidBody;
+    [SerializeField]
+    private GameObject leftLeg, rightLeg;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rigidBody = GetComponent<Rigidbody>();
-    }
+    private string previousLeg = "";
+
+    private float speed = 1f;
 
     // Update is called once per frame
     void Update()
@@ -19,6 +18,13 @@ public class Walk : MonoBehaviour
     }
 
     private void Move(){
-        
+        if(Input.GetButton("LeftLeg") && !Input.GetButton("RightLeg") && previousLeg != "LeftLeg"){
+            leftLeg.transform.Translate(0, 0, speed);
+            previousLeg = "LeftLeg";
+        }
+        else if(!Input.GetButton("LeftLeg") && Input.GetButton("RightLeg") && previousLeg != "RightLeg"){
+            rightLeg.transform.Translate(0, 0, speed);
+            previousLeg = "RightLeg";
+        }
     }
 }
