@@ -36,8 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\MenuController.cs" />
-     <Compile Include="Assets\Scripts\SettingsController.cs" />
+     <Compile Include="Assets\Scripts\Audio\AudioController.cs" />
+     <Compile Include="Assets\Scripts\Audio\Sounds.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\MenuController.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\SettingsController.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu\PauseMenuController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
