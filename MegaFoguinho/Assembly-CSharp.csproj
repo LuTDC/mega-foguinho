@@ -38,13 +38,16 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Audio\AudioController.cs" />
      <Compile Include="Assets\Scripts\Audio\Sounds.cs" />
-     <Compile Include="Assets\Scripts\Foguinho\Animate.cs" />
+     <Compile Include="Assets\Scripts\Bug.cs" />
+     <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\Foguinho\AnimationCopy.cs" />
      <Compile Include="Assets\Scripts\Foguinho\ConfigurableJointExtensions.cs" />
      <Compile Include="Assets\Scripts\Foguinho\Walk.cs" />
+     <Compile Include="Assets\Scripts\GameOver\GameOverController.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MenuController.cs" />
      <Compile Include="Assets\Scripts\MainMenu\SettingsController.cs" />
      <Compile Include="Assets\Scripts\PauseMenu\PauseMenuController.cs" />
+     <Compile Include="Assets\Scripts\VictoryMenu\VictoryController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

@@ -9,12 +9,13 @@ public class Walk : MonoBehaviour
 
     private string previousLeg = "";
 
-    private float speed = 1f;
+    private float speed = 0.8f;
 
     // Update is called once per frame
     void Update()
     {
         Move();
+        Rotate();
     }
 
     private void Move(){
@@ -26,5 +27,10 @@ public class Walk : MonoBehaviour
             rightLeg.transform.Translate(0, 0, speed);
             previousLeg = "RightLeg";
         }
+    }
+
+    private void Rotate(){
+        if(Input.GetButton("LeftArm")) transform.position = new Vector3(transform.position.x + 0.01f, transform.position.y, transform.position.z);
+        else if(Input.GetButton("RightArm")) transform.position = new Vector3(transform.position.x - 0.01f, transform.position.y, transform.position.z);
     }
 }
